@@ -18,7 +18,12 @@
   .lista-productos{
     grid-template-columns: repeat(3, 1fr ) ;
 
+    .producto-overlay {
+      .descripcion {
+        display: none
+      }
 
+    }
   }
 
 }

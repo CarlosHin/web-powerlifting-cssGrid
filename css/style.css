@@ -91,6 +91,9 @@ header .perfil img {
   .lista-productos {
     grid-template-columns: repeat(3, 1fr);
   }
+  .lista-productos .producto-overlay .descripcion {
+    display: none;
+  }
 }
 .separador-listas {
   margin: initial;
