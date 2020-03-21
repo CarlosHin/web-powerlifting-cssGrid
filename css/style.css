@@ -18,6 +18,10 @@
   width: 100px;
   display: block;
   margin: auto;
+  transition: 1s;
+}
+.menu .lista-menu .categoria:hover img {
+  transform: rotateY(180deg);
 }
 .menu .lista-config {
   min-height: 70vh;
@@ -158,6 +162,7 @@ header .perfil img {
   text-align: center;
   height: 50%;
   width: 100%;
+  padding: 10px;
   transition: 1s;
   transition-delay: 0.3s;
 }

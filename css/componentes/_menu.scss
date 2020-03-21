@@ -20,8 +20,15 @@
         width: 100px;
         display:block;
         margin:auto;
+        transition: 1s;
 
 
+      }
+    }
+
+    .categoria:hover{
+      img {
+        transform: rotateY(180deg);
       }
     }
   }
