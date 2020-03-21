@@ -35,6 +35,9 @@
   position: relative;
   display: block;
   @include sombra(0.5);
+  figure {
+    margin: 0;
+  }
   img {
     width:100%;
   }

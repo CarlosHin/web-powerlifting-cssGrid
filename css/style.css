@@ -106,6 +106,9 @@ header .perfil img {
   display: block;
   box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.5);
 }
+.producto figure {
+  margin: 0;
+}
 .producto img {
   width: 100%;
 }
