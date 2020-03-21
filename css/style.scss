@@ -20,6 +20,7 @@ body {
   grid-template-areas: "header header"
                        "menu contenido";
   justify-items:left;
+  column-gap: 5px;
 }
 
 @media screen and (max-width: 768px) {

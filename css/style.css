@@ -2,7 +2,7 @@
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: menu;
-  width: 200px;
+  width: 100%;
   background-color: #C9C8C4;
   min-height: 100vh;
 }
@@ -42,7 +42,7 @@
 header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
+  -ms-grid-column-span: 3;
   grid-area: header;
   width: 100%;
   display: grid;
@@ -78,7 +78,7 @@ header .perfil img {
 }
 .contenido {
   -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-column: 3;
   grid-area: contenido;
   width: 100%;
 }
@@ -130,6 +130,8 @@ header .perfil img {
 .producto-overlay {
   background: #C9C8C4AA;
   bottom: 0;
+  left: 0;
+  right: 0;
   position: absolute;
   align-items: center;
   justify-content: center;
@@ -137,7 +139,6 @@ header .perfil img {
   text-align: center;
   height: 50%;
   width: 100%;
-  padding: 5px;
 }
 .producto-overlay .nombre {
   margin-top: 0px;
@@ -164,6 +165,7 @@ body {
   grid-template-columns: 200px 1fr;
   grid-template-areas: "header header" "menu contenido";
   justify-items: left;
+  column-gap: 5px;
 }
 
 @media screen and (max-width: 768px) {
