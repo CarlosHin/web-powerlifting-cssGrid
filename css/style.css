@@ -102,9 +102,6 @@ header .perfil img {
 }
 
 @media screen and (max-width: 768px) {
-  .lista-productos {
-    grid-template-columns: repeat(3, 1fr);
-  }
   .lista-productos .producto-overlay .descripcion {
     display: none;
   }
@@ -162,7 +159,6 @@ header .perfil img {
   text-align: center;
   height: 50%;
   width: 100%;
-  padding: 10px;
   transition: 1s;
   transition-delay: 0.3s;
 }

@@ -22,7 +22,6 @@
 }
 @media screen and (max-width: 768px) {
   .lista-productos{
-    grid-template-columns: repeat(3, 1fr ) ;
 
     .producto-overlay {
       .descripcion {
@@ -91,7 +90,6 @@
   text-align: center;
   height: 50%;
   width:100%;
-  padding: 10px;
   transition: 1s;
   transition-delay: 0.3s;
 
