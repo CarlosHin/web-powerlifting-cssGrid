@@ -22,7 +22,16 @@ body {
   justify-items:left;
 }
 
+@media screen and (max-width: 768px) {
+  .main {
+    grid-template-areas: "header header"
+                         "contenido contenido"
+                         "menu menu";
+    justify-items:left;
+  }
 
+
+}
 
 
 

@@ -166,6 +166,27 @@ body {
   justify-items: left;
 }
 
+@media screen and (max-width: 768px) {
+  .main {
+    grid-template-areas: "header header" "contenido contenido" "menu menu";
+    justify-items: left;
+  }
+  .menu {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .contenido {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+}
 .vertMiddle {
   display: flex;
   align-items: center;
