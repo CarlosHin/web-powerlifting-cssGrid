@@ -1,0 +1,37 @@
+$color-claro: #C9C8C4;
+$color-oscuro: #292F36;
+@mixin sombra($valor){
+  box-shadow: 0px 20px 33px 0px rgba(0,0,0,$valor);
+
+}
+
+
+@import "componentes/menu";
+@import "componentes/header";
+@import "componentes/contenido";
+body {
+  margin:0;
+  font-family: 'Lato', sans-serif;
+}
+.main {
+  margin:0;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas: "header header"
+                       "menu contenido";
+  justify-items:left;
+}
+
+
+.contenido {
+  padding: 10px;
+  grid-area: contenido
+}
+
+
+
+
+.vertMiddle {
+  display: flex;
+  align-items: center
+}

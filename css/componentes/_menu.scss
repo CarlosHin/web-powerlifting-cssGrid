@@ -1,0 +1,55 @@
+.menu {
+  grid-area: menu;
+  width:200px;
+  background-color: $color-claro;
+  min-height: 100vh;
+
+
+  .lista-menu {
+    padding:10px;
+
+    .categoria {
+
+      p {
+        font-size: 30px;
+        text-align: center;
+        margin-top:0px;
+      }
+
+      img{
+        width: 100px;
+        display:block;
+        margin:auto;
+
+
+      }
+    }
+  }
+
+
+  .lista-config {
+    min-height: 70vh;
+    position: relative;
+    .config {
+      position: absolute;
+      bottom: 0;
+      width:100%;
+
+      p {
+        font-size: 30px;
+        text-align: center;
+        margin-top:0px;
+      }
+
+      img{
+        width: 100px;
+        display:block;
+        margin:auto;
+
+
+      }
+    }
+  }
+
+
+}

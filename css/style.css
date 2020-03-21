@@ -1,0 +1,162 @@
+.menu {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: menu;
+  width: 200px;
+  background-color: #C9C8C4;
+  min-height: 100vh;
+}
+.menu .lista-menu {
+  padding: 10px;
+}
+.menu .lista-menu .categoria p {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 0px;
+}
+.menu .lista-menu .categoria img {
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+.menu .lista-config {
+  min-height: 70vh;
+  position: relative;
+}
+.menu .lista-config .config {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.menu .lista-config .config p {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 0px;
+}
+.menu .lista-config .config img {
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  background-color: #292F36;
+}
+header .title {
+  padding: 10px;
+  font-size: 25px;
+}
+header input[type=text] {
+  margin: 0 auto;
+  width: 70%;
+  border-radius: 10px;
+  padding: 5px;
+  height: 30px;
+}
+header .perfil p {
+  font-size: 30px;
+  color: #C9C8C4;
+}
+header .perfil img {
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    grid-template-columns: 300px 1fr;
+  }
+}
+.lista-productos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  margin-left: 20px;
+}
+
+.categoria h1 {
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .lista-productos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.separador-listas {
+  margin: initial;
+  max-width: 500px;
+  border-top: 2px solid gray;
+  height: 0px;
+  margin-bottom: 20px;
+}
+
+.producto {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.5);
+}
+.producto img {
+  width: 100%;
+}
+
+.producto-overlay {
+  background: #C9C8C4AA;
+  bottom: 0;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  color: #292F36;
+  text-align: center;
+  height: 50%;
+  width: 100%;
+  padding: 5px;
+}
+.producto-overlay .nombre {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+  font-size: 20px;
+  text-align: left;
+}
+.producto-overlay .descripcion {
+  width: 100%;
+  font-size: 13px;
+  text-align: left;
+  margin-top: 5px;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.main {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas: "header header" "menu contenido";
+  justify-items: left;
+}
+
+.contenido {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  padding: 10px;
+  grid-area: contenido;
+}
+
+.vertMiddle {
+  display: flex;
+  align-items: center;
+}
