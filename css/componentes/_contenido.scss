@@ -1,14 +1,20 @@
+.contenido {
+  grid-area: contenido;
+  width:100%;
+}
+
+
+
 .lista-productos{
   display: grid;
-  grid-template-columns: repeat(5, 1fr ) ;
+  width:100%;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)  ) ;
   gap: 5px;
-  margin-left: 20px;
-
 
 }
 
 .categoria {
-
+  width:100%;
   h1 {
     margin-bottom: 0px;
   }
@@ -39,6 +45,7 @@
   cursor: pointer;
   position: relative;
   display: block;
+  padding:5px;
   @include sombra(0.5);
   figure {
     margin: 0;

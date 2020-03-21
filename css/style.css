@@ -76,13 +76,23 @@ header .perfil img {
     grid-template-columns: 300px 1fr;
   }
 }
-.lista-productos {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 5px;
-  margin-left: 20px;
+.contenido {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: contenido;
+  width: 100%;
 }
 
+.lista-productos {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 5px;
+}
+
+.categoria {
+  width: 100%;
+}
 .categoria h1 {
   margin-bottom: 0px;
 }
@@ -107,6 +117,7 @@ header .perfil img {
   cursor: pointer;
   position: relative;
   display: block;
+  padding: 5px;
   box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.5);
 }
 .producto figure {
@@ -153,13 +164,6 @@ body {
   grid-template-columns: 200px 1fr;
   grid-template-areas: "header header" "menu contenido";
   justify-items: left;
-}
-
-.contenido {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  padding: 10px;
-  grid-area: contenido;
 }
 
 .vertMiddle {
