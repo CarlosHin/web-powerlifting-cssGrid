@@ -46,6 +46,8 @@
   position: relative;
   display: block;
   padding:5px;
+  transition: 0.5s;
+  transition-delay: 0.2s;
   @include sombra(0.5);
   figure {
     margin: 0;
@@ -56,6 +58,24 @@
 
 
 
+}
+.producto:hover {
+  transform: scale(1.5);
+  z-index:3;
+  .producto-overlay {
+    background: #555555AA;
+    height: 100%;
+  }
+  .nombre {
+    font-size: 30px;
+    color: white;
+  }
+  .descripcion {
+
+    font-size: 20px;
+    color: white;
+
+  }
 }
 
 
@@ -71,8 +91,12 @@
   text-align: center;
   height: 50%;
   width:100%;
+  transition: 1s;
+  transition-delay: 0.3s;
+
 
   .nombre {
+    padding:5px;
     margin-top: 0px;
     margin-bottom:0px;
     width:100%;
@@ -81,6 +105,7 @@
 
   }
   .descripcion {
+    padding:5px;
     width:100%;
     font-size: 13px;
     text-align: left;
